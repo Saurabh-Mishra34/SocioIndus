@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./header.css" />
+</head>
+<script>
+    var i = 0;
+    var txt = 'Where Theory Meets Practice!';
+    var speed = 50;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+</script>
+<style>
+    #demo {
+        font-size: 120px;
+        color: rgba(0, 0, 0, 0.651);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 10%;
+        display: inline-block;
+    }
+
+    #book {
+        font-size: 100px;
+        color: rgba(0, 0, 0, 0.651);
+        margin-left: 30%;
+        display: inline-block;
+    }
+
+    #pen {
+        font-size: 100px;
+        color: rgba(0, 0, 0, 0.651);
+        margin-left: 08%;
+        display: inline-block;
+
+    }
+
+    #exp {
+        font-size: 100px;
+        color: rgba(0, 0, 0, 0.651);
+        margin-left: 08%;
+        display: inline-block;
+
+    }
+
+    .li {
+        color: black;
+        text-decoration: none;
+    }
+
+    .tt {
+        color: white;
+        text-decoration: none;
+    }
+
+    .li:hover {
+        color: blue;
+        font-weight: normal;
+    }
+
+    .tt:hover {
+        font-weight: normal;
+        color: blue;
+    }
+</style>
+
+<body onload="typeWriter()">
+    <div id="header">
+        <div id="img">
+            <img src="logo_new.png"></a>
+        </div>
+        <div id="jstcl">
+            <nav class="nbar">
+                <ul>
+                    <li><a href='#' class='li'><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
+                    <li><i class="fa fa-university" aria-hidden="true"></i>&nbsp;Academics
+                        <div class="un">
+                            <ul>
+                                <li>Curricular</li>
+                                <li><a href="tt2.html" class='tt'>Time Table</a></li>
+                                <li>Tech Events</li>
+                                <li><a href="intern.html" class='tt'>Internships</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href='sports.html' class='li'><i class="fa fa-running"
+                                aria-hidden="true"></i>&nbsp;Sports</a></li>
+                    <li><a href='feepay.html' class='li'><i class="fa fa-rupee-sign"
+                                aria-hidden="true"></i>&nbsp;Fees</a></li>
+                    <li><i class="fa fa-handshake" aria-hidden="true"></i>&nbsp;Events</li>
+                    <li><a href="Register.html" class='li'><i class="fa fa-user-friends"
+                                aria-hidden="true"></i>&nbsp;Login/Register</a></li>
+                    <li><a href='ContactUs.html' class='li'><i class="fa fa-address-book"
+                                aria-hidden="true"></i>&nbsp;Contact Us</a></li>
+                </ul>
+                <div class="sba">
+                    <input type="search" placeholder="search here.." class="inp" />
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="right">
+        <p id="demo"></p>
+        <br>
+        <p id="book"><i class="fas fa-book-open"></i></p>
+        <p id="pen"><i class="fas fa-pen-nib"></i></p>
+        <p id="exp"><i class="fas fa-flask"></i></p>
+    </div>
+    <div class="footer">
+        <p id="cp">&copy;Group Project 2021</p>
+        <p id="TC">Terms & Conditions</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./header.css" />
+    <style>
+        body {
+            background-color: aliceblue;
+            margin: 0%;
+            padding: 0%;
+        }
+
+
+
+        #fo {
+            position: absolute;
+            top: 22%;
+            left: 36%;
+            background-color: rgba(0, 0, 0, 0.74);
+            color: white;
+            height: 500px;
+            width: 550px;
+            border-radius: 15%;
+            box-sizing: border-box;
+            font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+            font-size: 1.2em;
+            box-shadow: 30px 30px 60px grey;
+        }
+
+        #inform div {
+            padding: 14px;
+            box-sizing: border-box;
+
+        }
+
+        #inform {
+            margin-top: 5%;
+
+            margin-left: 18%;
+
+        }
+
+        div input {
+            padding: 5px;
+            box-sizing: border-box;
+            margin: 5px;
+            text-align: center;
+            font-size: 1em;
+            width: 300px;
+
+        }
+
+        div select {
+            padding: 6px;
+            box-sizing: border-box;
+            margin: 6px;
+            text-align: center;
+            font-size: 0.9em;
+            width: 190px;
+        }
+
+        #but {
+            margin-left: 26%;
+            margin-top: 10px;
+            box-sizing: border-box;
+            width: 25%;
+            padding: 12px 18px;
+            border-radius: 7%;
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffa700;
+            border-radius: 8%;
+            font-weight: bold;
+            color: aliceblue;
+        }
+
+        #faw {
+            margin-top: 0;
+            margin-left: 26%;
+            font-size: 80px;
+            color: white;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            height: 40px;
+            width: 100%;
+            background-color: #ffa700;
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #cp {
+            display: inline;
+            float: left;
+            margin-left: 40%;
+            border-right: 1px solid black;
+            font-weight: bold;
+            color: black;
+        }
+
+        #TC {
+            display: inline;
+            float: right;
+            margin-right: 44%;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+   <script type="text/JavaScript"> 
+        function cofu()
+        {
+            let colo = confirm("Confirm Login");
+        }   
+ </script>
+</head>
+
+<body >
+    <div>
+        <form id='fo' action="prologin.php" method="POST">
+            <div id="inform">
+                <div id="faw">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <input type="text" name="uname" placeholder="username">
+                </div>
+                <div>
+                    <input type="password" name="pass" placeholder="password">
+                </div>
+                <div>
+                    <button type="submit" id="but" onclick="cofu()">Login</button>
+                </div>
+                <div>
+                    Don't have an account?<a href="Register.html"
+                        style="text-decoration: none;color:greenyellow;font-weight: bold;">Create account</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="footer">
+        <p id="cp">&copy;Group Project 2021</p>
+        <p id="TC">Terms & Conditions</p>
+    </div>
+</body>
+
+</html>

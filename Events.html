@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./header.css" />
+    <style>
+        body {
+            margin:3px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        .nbar {
+            right: 0;
+        }
+        .main {
+            position: absolute;
+            width: 100%;
+            height: 90%;
+            display: flex;
+            border: 2px solid #000;
+        }
+
+        .main .im {
+            position: relative;
+            background-color: cadetblue;
+            flex: 1;
+            transition: .5s ease-in-out;
+        }
+
+        .main .im .con {
+            position: absolute;
+            bottom: 0;
+            margin: 40px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0s;
+            transform: translateY(100px);
+        }
+
+        .main .im:hover {
+            flex-grow: 5;
+        }
+
+        .main .im:nth-child(1) {
+            background: url("indus1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .main .im:nth-child(2) {
+            background: url("indus2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .main .im:nth-child(3) {
+            background: url("indus3.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .main .im:nth-child(4) {
+            background: url("indus4.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .main .im:nth-child(5) {
+            background: url("indus5.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .main .im:hover .con {
+            visibility: visible;
+            opacity: 1;
+            transition: .5s;
+            transition-delay: .5s;
+            transform: translateY(0px);
+        }
+
+        .li {
+            color: black;
+            text-decoration: none;
+        }
+
+        .tt {
+            color: white;
+            text-decoration: none;
+        }
+
+        .li:hover {
+            color: blue;
+            font-weight: normal;
+        }
+
+        .tt:hover {
+            font-weight: normal;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="img">
+            <img src="logo_new.png"></a>
+        </div>
+        <div id="jstcl">
+            <nav class="nbar">
+                <ul>
+                    <li><a href='#' class='li'><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
+                    <li><i class="fa fa-university" aria-hidden="true"></i>&nbsp;Academics
+                        <div class="un">
+                            <ul>
+                                <li>Curricular</li>
+                                <li><a href="tt2.html" class='tt'>Time Table</a></li>
+                                <li>Tech Events</li>
+                                <li><a href="intern.html" class='tt'>Internships</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><i class="fa fa-running" aria-hidden="true"></i>&nbsp;Sports</li>
+                    <li><a href='feepay.html' class='li'><i class="fa fa-rupee-sign"
+                                aria-hidden="true"></i>&nbsp;Fees</a></li>
+                    <li><i class="fa fa-handshake" aria-hidden="true"></i>&nbsp;Events</li>
+                    <li><a href="Login.html" class='li'><i class="fa fa-user-friends"
+                                aria-hidden="true"></i>&nbsp;Login/Register</a></li>
+                    <li><a href='ContactUs.html' class='li'><i class="fa fa-address-book"
+                                aria-hidden="true"></i>&nbsp;Contact Us</a></li>
+                </ul>
+                <div class="sba">
+                    <input type="search" placeholder="search here.." class="inp" />
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="main">
+        <div class="im">
+            <div class="con">
+                <h2>Recent Event by CESA</h2>
+                <p>The India men's national cricket team, also known as Team India,[8] Men in Blue,[9] and
+                    All-Blues[citation needed],
+                    is governed by the Board of Control for Cricket in India (BCCI), and is a Full Member of the
+                    International Cricket
+                    Council (ICC) with Test, One-Day International (ODI) and Twenty20 International (T20I) status.</p>
+            </div>
+        </div>
+        <div class="im">
+            <div class="con">
+                <h2>CESA</h2>
+                <p>The India men's national cricket team, also known as Team India,[8] Men in Blue,[9] and
+                    All-Blues[citation needed],
+                    is governed by the Board of Control for Cricket in India (BCCI), and is a Full Member of the
+                    International Cricket
+                    Council (ICC) with Test, One-Day International (ODI) and Twenty20 International (T20I) status.</p>
+            </div>
+        </div>
+        <div class="im">
+            <div class="con">
+                <h2>Indus Univerisity</h2>
+                <p>The India men's national cricket team, also known as Team India,[8] Men in Blue,[9] and
+                    All-Blues[citation needed],
+                    is governed by the Board of Control for Cricket in India (BCCI), and is a Full Member of the
+                    International Cricket
+                    Council (ICC) with Test, One-Day International (ODI) and Twenty20 International (T20I) status.</p>
+            </div>
+        </div>
+        <div class="im">
+            <div class="con">
+                <h2>SAC</h2>
+                <p>The India men's national cricket team, also known as Team India,[8] Men in Blue,[9] and
+                    All-Blues[citation needed],
+                    is governed by the Board of Control for Cricket in India (BCCI), and is a Full Member of the
+                    International Cricket
+                    Council (ICC) with Test, One-Day International (ODI) and Twenty20 International (T20I) status.</p>
+            </div>
+        </div>
+        <div class="im">
+            <div class="con">
+                <h2>Recent Event by SAC</h2>
+                <p>The India men's national cricket team, also known as Team India,[8] Men in Blue,[9] and
+                    All-Blues[citation needed],
+                    is governed by the Board of Control for Cricket in India (BCCI), and is a Full Member of the
+                    International Cricket
+                    Council (ICC) with Test, One-Day International (ODI) and Twenty20 International (T20I) status.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

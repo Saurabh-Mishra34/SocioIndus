@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./header.css" />
+    <style>
+        #fo {
+            position: absolute;
+            top: 20%;
+            left: 34%;
+            background-color: rgba(0, 0, 0, 0.74);
+            color: white;
+            height: 675px;
+            width: 740px;
+            border-radius: 15%;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            box-shadow: 30px 30px 60px grey;
+        }
+
+        #inform div {
+            padding: 8px;
+            box-sizing: border-box;
+
+        }
+
+        #inform {
+            margin-top: 5%;
+
+            margin-left: 18%;
+
+        }
+
+        div input {
+            padding: 5px;
+            box-sizing: border-box;
+            margin: 5px;
+            text-align: center;
+            font-size: 1em;
+            width: 190px;
+
+        }
+
+        div select {
+            padding: 6px;
+            box-sizing: border-box;
+            margin: 6px;
+            text-align: center;
+            font-size: 0.9em;
+            width: 190px;
+        }
+
+        #but {
+            margin-left: 26%;
+            margin-top: 10px;
+            box-sizing: border-box;
+            width: 20%;
+            padding: 12px 18px;
+            border-radius: 7%;
+            font-size: 1em;
+            font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+            background-color: #ffa700;
+            border-radius: 8%;
+            font-weight: bold;
+            color: aliceblue;
+        }
+
+        #faw {
+            margin-top: 0;
+            margin-left: 26%;
+            font-size: 80px;
+            color: white;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            height: 40px;
+            width: 100%;
+            background-color: #ffa700;
+            color: white;
+            text-align: center;
+            display: block;
+            margin-top: 50px;
+        }
+
+        .li {
+            color: black;
+            text-decoration: none;
+        }
+
+        .tt {
+            color: white;
+            text-decoration: none;
+        }
+
+        .li:hover {
+            color: blue;
+            font-weight: normal;
+        }
+
+        .tt:hover {
+            font-weight: normal;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="img">
+            <img src="logo_new.png"></a>
+        </div>
+        <div id="jstcl">
+            <nav class="nbar">
+                <ul>
+                    <li><a href="Home.html" class='li'><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
+                    <li><i class="fa fa-university" aria-hidden="true"></i>&nbsp;Academics
+                        <div class="un">
+                            <ul>
+                                <li>Curricular</li>
+                                <li><a href="tt2.html" class='tt'>Time Table</a></li>
+                                <li>Tech Events</li>
+                                <li><a href="intern.html" class='tt'>Internships</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href='sports.html' class='li'><i class="fa fa-running"
+                                aria-hidden="true"></i>&nbsp;Sports</a></li>
+                    <li><a href='feepay.html' class='li'><i class="fa fa-rupee-sign"
+                                aria-hidden="true"></i>&nbsp;Fees</a></li>
+                    <li><i class="fa fa-handshake" aria-hidden="true"></i>&nbsp;Events</li>
+                    <li><a href="Register.html" class='li'><i class="fa fa-user-friends"
+                                aria-hidden="true"></i>&nbsp;Login/Register</a></li>
+                    <li><a href='ContactUs.html' class='li'><i class="fa fa-address-book"
+                                aria-hidden="true"></i>&nbsp;Contact Us</a></li>
+                </ul>
+                <div class="sba">
+                    <input type="search" placeholder="search here.." class="inp" />
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div>
+        <form id='fo' action="register.php" method="POST">
+            <div id="inform">
+                <div id="faw">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <input type="text" name="fname" placeholder="First name"> <input type="text" name="lname"
+                        placeholder="Last name">
+                </div>
+                <div>
+                    <input type="email" name="mail" placeholder="Indus mail">
+                </div>
+                <div>
+                    <input type="password" placeholder="password" name="pass" required><br>
+                </div>
+                <div>
+                    <input type="password" placeholder="Renter-password" name="repass" required><br>
+                </div>
+                <div>
+                    <input type="text" name="roll" placeholder="Indus id">
+                </div>
+                <div>
+                    <select name="Program">
+                        <option value="Pr">Program</option>
+                        <option value="BT">Bachelor Of Technology</option>
+                        <option value="BA">Bachelor Of Architecture</option>
+                        <option value="BSC">Bachelor Of Science</option>
+                        <option value="BBA">Bachelor In Business Administration</option>
+                        <option value="MT">Master Of Technology</option>
+                        <option value="MA">Master Of Architecture</option>
+                        <option value="MSC">Master Of Science</option>
+                        <option value="MBA">Masters of Business Administration</option>
+                        <option value="IMBA">Integrated Masters of Business Administration</option>
+                        <option value="PHD">P.H.D.</option>
+                    </select>
+                    <select name="Branch">
+                        <option value="Br">Branch</option>
+                        <option value="CE">Computer Engineering</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="ME">Mechanical Engineering</option>
+                        <option value="AE">Automobile Engineering</option>
+                        <option value="CE">Civil Engineering</option>
+                        <option value="Meta">Metallurgy</option>
+                    </select>
+                </div>
+                <div style="font-weight: bold;">
+                    Male:<input type="radio" name="gender" style="size: 10px;"> Female:<input type="radio"
+                        name="gender">
+                </div>
+
+                <div>
+                    <button type="submit" id="but">Register</button>
+                </div>
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Already have an
+                    account?<a href="socioindus.html"
+                        style="text-decoration: none;color:greenyellow;font-weight: bold;">Login</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="footer">
+        <p id="cp">&copy; Group Project 2021</p>
+        <p id="TC">Terms & Conditions</p>
+    </div>
+</body>
+
+</html>
